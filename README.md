@@ -86,11 +86,6 @@ Open | Flexible Architecture with Open Components | OCP, Node.JS, Razee
 Security | Protected LDAP with Certs | **KeyProtect service** is a roadmap item for next release
 Networking | Using Calico network policies to block traffic | OCP service mesh (based on Calico)
 
-## Final solution details 
-* Kunal to explain the solution implementation here
-
-* Kunal to upload video here
-
 ### links to access the application GUI and the chatbot service
 * Chatbot application link: http://assistent-bot-default.rhosmn-ce16e8809c82e1ef7eea8f973108a42d-0001.eu-de.containers.appdomain.cloud/
 * Openshift on OKD dashboard: https://master.openshift.local:8443/ (note must add the IP 161.156.72.178 to DNS/hosts file)
