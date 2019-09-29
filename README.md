@@ -87,6 +87,7 @@ Security | Protected LDAP with Certs | **KeyProtect service** is a roadmap item 
 Networking | Using Calico network policies to block traffic | OCP service mesh (based on Calico)
 
 ### links to access the application GUI and the chatbot service
-* Chatbot application link: http://assistent-bot-default.rhosmn-ce16e8809c82e1ef7eea8f973108a42d-0001.eu-de.containers.appdomain.cloud/
+* Chatbot application link on Managed Openshift On Cloud: http://assistant-bot-assistant-bot.rhosmn-ce16e8809c82e1ef7eea8f973108a42d-0001.eu-de.containers.appdomain.cloud/
+* Chatbot application link on Managed Openshift On Cloud: 161.156.72.178:32306/
 * Openshift on OKD dashboard: https://master.openshift.local:8443/ (note must add the IP 161.156.72.178 to DNS/hosts file)
  
