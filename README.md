@@ -1,5 +1,5 @@
 # Project HACK - Hybrid Application Control on Kubernetes   
-PyRK8 Dubai - Team Cloud Platfrom G&amp;L - MVP
+PyRK8 Dubai - Team Cloud Platform G&amp;L - MVP
 
 # Project Overview & Summary
 Project HACK is aimed at delivering a Minimum Viable Product (MVP) that aims to create a customer facing application within a Hybrid Environment that is split across IBM cloud and on-premise. It uses Redhat OpenShift to host and manage the application development that is based on of Node.JS. Managed Redhat OpenShift will be used on cloud and OKD hosted on a VMware node will simulate the on-premise environment. An external API integration will connect the application to Watson NLP for the interface (chatbot). 
@@ -25,6 +25,11 @@ The solution architecture consists of the following key components:
 
 ![Solution Architecture](/images/architecture1.png)
 
+# Solution Walkthrough
+
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/VjtpKePE36s/0.jpg)](https://www.youtube.com/watch?v=VjtpKePE36s)
+
+
 ## High level cloud services overview
 
 The diagram above illustrates the key services that will be provided at IBM Cloud:
@@ -44,7 +49,7 @@ The Master Nodes are IBM managed within a parallel Highly Available architecture
 A MultiZone Load Balancer will handle the traffic to the cluster to ensure full resiliency.
 An Engress Gateway will allow traffic flow to-from the Watson API services
 
-### OKD (on VMware)
+## OKD on VMware
 For the on-premise environment, it is simulated by having a VMware vSphere compute node and OKD is installed on the VMware hypervisor. This will act as the 'production' instance host that is pushed from the cloud 'test/dev/pre-prod' environment.
 For guidance on the installation and setup on VMware, reference the Redhat reference architecture link:
 https://access.redhat.com/documentation/en-us/reference_architectures/2018/html-single/deploying_and_managing_openshift_3.9_on_vmware_vsphere/index
@@ -68,9 +73,6 @@ https://github.com/razee-io/Razee#step-1-install-razee
 ## Watson Assistant
 
 Watson Assistant will be used to provide the Natural Language Processing (NLP) and will act as a chatbot service triggered by APIs from the Node.JS application hosted on OpenShift.
-<p align="center">
- <img src="/images/watson1.png">
-</p>
 
 For setup and configuration guidance, refer to this link:
 https://github.com/watson-developer-cloud/assistant-simple
@@ -86,8 +88,8 @@ Open | Flexible Architecture with Open Components | OCP, Node.JS, Razee
 Security | Protected LDAP with Certs | **KeyProtect service** is a roadmap item for next release
 Networking | Using Calico network policies to block traffic | OCP service mesh (based on Calico)
 
-### links to access the application GUI and the chatbot service
+## Links to access the application GUI and the chatbot service
 * Chatbot application link on Managed Openshift On Cloud: http://assistant-bot-assistant-bot.rhosmn-ce16e8809c82e1ef7eea8f973108a42d-0001.eu-de.containers.appdomain.cloud/
-* Chatbot application link on Managed Openshift On Cloud: 161.156.72.178:32306/
+* Chatbot application link on Managed Openshift On Cloud: http://161.156.72.178:32306/
 * Openshift on OKD dashboard: https://master.openshift.local:8443/ (note must add the IP 161.156.72.178 to DNS/hosts file)
  
